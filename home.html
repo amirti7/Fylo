@@ -15,11 +15,11 @@
       <div class="left-container">
         <img class="head_logo" src="assets/logo.svg">
           <div class="icons">
-            <button id="icon-document"><img class="icon-document" src="assets/icon-document.svg"></button>
+            <button id="icon-document" onclick="uploadFile()"><img class="icon-document" src="assets/icon-document.svg"></button>
             <button id="icon-folder"><img class="icon-folder" src="assets/icon-folder.svg"></button>
             <button id="icon-upload"><img class="icon-upload" src="assets/icon-upload.svg"></button>
          </div>
-  
+         <input id="file-input" type="file" onchange="onFileSelected()" multiple>
       </div>
   
   <div class="right-container">
@@ -35,6 +35,7 @@
   </div>
   </div>
   <img class="background_img" src="assets/bg-desktop.png">
+  <script src="app.js"></script>
   </body>
  
   </html>
